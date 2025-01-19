@@ -1,5 +1,0 @@
-.	Basic Statistics	Per Base Sequence Quality	Per Tile Sequence Quality	Per Sequence Quality Scores	Per Base Sequence Content	Per Sequence GC Content	Per Base N Content	Sequence Length Distribution	Sequence Duplication Levels	Overrepresented Sequences	Adapter Content
-PA220KH-lib09-P19-Tumor_S2_L001_R1_001	1	1	1	1	0.25	0.25	1	1	0.25	0.25	0.25
-PA220KH-lib09-P19-Tumor_S2_L001_R2_001	1	1	1	1	0.25	0.25	1	1	0.25	0.25	0.25
-PA221MH-lib09-P19-Norm_S1_L001_R1_001	1	1	1	1	0.25	0.25	1	1	0.25	0.25	0.25
-PA221MH-lib09-P19-Norm_S1_L001_R2_001	1	1	1	1	0.25	0.25	1	1	0.25	0.25	0.25

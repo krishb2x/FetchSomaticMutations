@@ -1,3 +1,0 @@
-[2025-01-19 00:46:41,724] multiqc.core.version_check                         [WARNING]  MultiQC Version v1.26 now available!
-[2025-01-19 00:46:41,724] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/India2/bioinfo2/PGTA/Nanopore/KrishnaWdir/TEST/OutputDir/fastqc
-[2025-01-19 00:46:41,831] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 4 reports
