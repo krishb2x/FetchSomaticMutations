@@ -1,6 +1,6 @@
 # FetchSomaticMutations
 Hello, I developed this pipeline as part of an interview assignment to analyze somatic mutations in tumor and normal samples. The design follows specific assignment protocols rather than adhering to clinical NGS standards.
-This includes steps for quality control, alignment, mutation calling, and background mutation calculation.
+This includes steps for quality control, alignment, mutation calling, background mutation calculation and custom annotation.
 
 # Environment:
 Linux-based OS
