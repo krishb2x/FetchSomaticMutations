@@ -1,3 +1,2 @@
 # FetchSomaticMutations
-Hi, I have developed this pipeline for an interview Assignment to perform somatic mutation analysis on tumor and normal samples. Thus design follows specific protocols given for the assignment, not clinical NGS standards.
-It includes quality control, alignment, mutation calling, and background mutation calculation.
+Hello, I have developed this pipeline as part of an interview assignment to perform somatic mutation analysis on tumor and normal samples. The design adheres to the specific protocols provided for the assignment, rather than clinical NGS standards. It includes steps for quality control, alignment, mutation calling, and background mutation calculation.
