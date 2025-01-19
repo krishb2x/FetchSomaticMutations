@@ -8,6 +8,7 @@ THREADS = config["threads"]
 OUTPUT_DIR = config["output_dir"]
 NORMAL_SAMPLE = config["normal_sample"]
 TUMOR_SAMPLE = config["tumor_sample"]
+ref4anno = config["ref_file"]
 
 # Define the final outputs for the workflow (only for normal and tumor)
 rule all:
@@ -17,7 +18,8 @@ rule all:
         OUTPUT_DIR + "/alignment/" + TUMOR_SAMPLE + ".sorted.bam",
         OUTPUT_DIR + "/mutations/" + TUMOR_SAMPLE + "_somatic_mutations_filtered.vcf",
         OUTPUT_DIR + "/mutations/" + TUMOR_SAMPLE + "_background_mutation_stats.txt",
-        OUTPUT_DIR + "/mutations/" + TUMOR_SAMPLE + "_somatic_mutations.tsv"
+        OUTPUT_DIR + "/mutations/" + TUMOR_SAMPLE + "_somatic_mutations_filtered_variants.tsv",
+        OUTPUT_DIR + "/mutations/" + TUMOR_SAMPLE + "annotated_somatic_mutations_filtered_variants.tsv"
 
 # FastQC rule
 rule fastqc:
@@ -125,8 +127,20 @@ rule calculate_background_mutation_level:
         vcf=OUTPUT_DIR + "/mutations/" + TUMOR_SAMPLE + "_somatic_mutations_filtered.vcf"
     output:
         stats=OUTPUT_DIR + "/mutations/" + TUMOR_SAMPLE + "_background_mutation_stats.txt",
-        outvcf= OUTPUT_DIR + "/mutations/" + TUMOR_SAMPLE + "_somatic_mutations.tsv"
+        outvcf= OUTPUT_DIR + "/mutations/" + TUMOR_SAMPLE + "_somatic_mutations_filtered_variants.tsv"
     shell:
         """
         python3 scripts/calculate_background_mutation.py -i {input.vcf} -o {output.outvcf} -s {output.stats}
+        """
+        
+#custom annotation Rule
+rule custom_annotation:
+    input:
+        mutatedvcf= OUTPUT_DIR + "/mutations/" + TUMOR_SAMPLE + "_somatic_mutations_filtered_variants.tsv",
+        ref= ref4anno
+    output:
+        Ann_out = OUTPUT_DIR + "/mutations/" + TUMOR_SAMPLE + "annotated_somatic_mutations_filtered_variants.tsv"
+    shell:
+        """
+         python3 scripts/annotate_mutations.py --reference_file {input.ref} --mutation_file {input.mutatedvcf} --output_file {output.Ann_out}
         """

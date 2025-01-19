@@ -1,0 +1,4 @@
+Total somatic mutations: 11
+Median background mutation level (AF in normal tissue): 0.0001025
+Reads per million threshold for confident mutation calling: 0.0010249999999999999
+Somatic mutations details saved to: OutputDir/mutations/PA220KH-lib09-P19-Tumor_S2_L001_somatic_mutations_filtered_variants.tsv

@@ -4,3 +4,4 @@ threads: 10
 output_dir: "OutputDir"
 normal_sample: "PA221MH-lib09-P19-Norm_S1_L001"
 tumor_sample: "PA220KH-lib09-P19-Tumor_S2_L001"
+ref_file: "InputDir/PANCAN_PDAC_100plex_ref.csv"

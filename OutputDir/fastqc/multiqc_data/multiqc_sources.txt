@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	PA220KH-lib09-P19-Tumor_S2_L001_R2_001	/mnt/India2/bioinfo2/PGTA/Nanopore/KrishnaWdir/TEST/OutputDir/fastqc/PA220KH-lib09-P19-Tumor_S2_L001_R2_001_fastqc.zip
+FastQC	all_sections	PA220KH-lib09-P19-Tumor_S2_L001_R1_001	/mnt/India2/bioinfo2/PGTA/Nanopore/KrishnaWdir/TEST/OutputDir/fastqc/PA220KH-lib09-P19-Tumor_S2_L001_R1_001_fastqc.zip
+FastQC	all_sections	PA221MH-lib09-P19-Norm_S1_L001_R2_001	/mnt/India2/bioinfo2/PGTA/Nanopore/KrishnaWdir/TEST/OutputDir/fastqc/PA221MH-lib09-P19-Norm_S1_L001_R2_001_fastqc.zip
+FastQC	all_sections	PA221MH-lib09-P19-Norm_S1_L001_R1_001	/mnt/India2/bioinfo2/PGTA/Nanopore/KrishnaWdir/TEST/OutputDir/fastqc/PA221MH-lib09-P19-Norm_S1_L001_R1_001_fastqc.zip
