@@ -1,0 +1,6 @@
+input_dir: "InputDir"
+reference_genome: "/mnt/India/bioinfo/GUI_application/triploidy/hg37/Homo_sapiens_assembly19.fasta"
+threads: 10
+output_dir: "OutputDir"
+normal_sample: "PA221MH-lib09-P19-Norm_S1_L001"
+tumor_sample: "PA220KH-lib09-P19-Tumor_S2_L001"
