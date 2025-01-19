@@ -1,4 +1,3 @@
-# Load configuration
 configfile: "config.yaml"
 
 # Input parameters from the config file
@@ -10,7 +9,6 @@ NORMAL_SAMPLE = config["normal_sample"]
 TUMOR_SAMPLE = config["tumor_sample"]
 ref4anno = config["ref_file"]
 
-# Define the final outputs for the workflow (only for normal and tumor)
 rule all:
     input:
         OUTPUT_DIR + "/fastqc/multiqc_report.html",
