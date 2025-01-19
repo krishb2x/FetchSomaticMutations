@@ -6,7 +6,7 @@ This includes steps for quality control, alignment, mutation calling, background
 Linux-based OS
 
 # Software Requirements:
-Snakemake, BWA, Samtools, GATK Mutect2, FastQC, MultiQC, Python.
+Snakemake, BWA, Samtools, GATK Mutect2, FastQC, MultiQC, Python3.10, pyvcf.
 
 # Config File:
 "The config file contains key parameters used in the pipeline. update before running"
