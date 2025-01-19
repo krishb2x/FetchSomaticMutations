@@ -10,12 +10,12 @@ Snakemake, BWA, Samtools, GATK Mutect2, FastQC, MultiQC, Python.
 
 # Config File:
 "The config file contains key parameters used in the pipeline. update before running"
-input_dir: "InputDir" ## Directory path where input Fastq files are stored.
-reference_genome: "Ref/Homo_sapiens_assembly19.fasta" ## Path to the reference genome.
-threads: 10 ## Number of threads allocated for the pipeline.
-output_dir: "OutputDir" ## Directory path where output files will be saved.
-normal_sample: "PA221MH-lib09-P19-Norm_S1_L001" ## normal sample id (before _R*_001.fastq.gz) [Illumina paired fastq]
-tumor_sample: "PA220KH-lib09-P19-Tumor_S2_L001" ## tumor sample id (before _R*_001.fastq.gz) [Illumina paired fastq]
+1. input_dir: "InputDir" ## Directory path where input Fastq files are stored.
+2. reference_genome: "Ref/Homo_sapiens_assembly19.fasta" ## Path to the reference genome.
+3. threads: 10 ## Number of threads allocated for the pipeline.
+4. output_dir: "OutputDir" ## Directory path where output files will be saved.
+5. normal_sample: "PA221MH-lib09-P19-Norm_S1_L001" ## normal sample id (before _R*_001.fastq.gz) [Illumina paired fastq]
+6. tumor_sample: "PA220KH-lib09-P19-Tumor_S2_L001" ## tumor sample id (before _R*_001.fastq.gz) [Illumina paired fastq]
 
 # Running Steps:
 1. Install the Software Requirements
